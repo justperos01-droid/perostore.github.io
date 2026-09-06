@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PERO STORE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background"></div>
+<div class="aura aura1"></div><div class="aura aura2"></div>
+<div class="top-brand">PERO <span>STORE</span></div>
+
+<main class="layout">
+  <section class="auth-card glass">
+
+    <div class="auth-view login-view active">
+      <div class="icon">🔐</div>
+      <div class="mini-brand">PERO <span>STORE</span></div>
+      <h1>Welcome back</h1>
+      <p class="subtitle">Login to continue shopping</p>
+
+      <form id="loginForm">
+        <label>Username or Email
+          <input id="identity" required placeholder="Enter your username or email">
+        </label>
+        <label>Password
+          <div class="password">
+            <input id="password" type="password" required placeholder="Enter your password">
+            <button type="button" class="eye" data-target="password">◉</button>
+          </div>
+        </label>
+        <div class="options">
+          <label class="check"><input id="remember" type="checkbox"> Remember me</label>
+          <a href="#" id="forgot">Forgot password?</a>
+        </div>
+        <div id="loginError" class="message"></div>
+        <button class="main-btn" type="submit">Login</button>
+      </form>
+
+      <div class="divider"><span>OR</span></div>
+      <button class="google" id="google" type="button"><b>G</b> Login with Google</button>
+      <p class="bottom">Don't have an account?
+        <button class="text-btn switch-register" type="button">Register here</button>
+      </p>
+    </div>
+
+    <div class="auth-view register-view">
+      <button class="back-btn switch-login" type="button">← Back to Login</button>
+      <div class="mini-brand">PERO <span>STORE</span></div>
+      <h2>Create an account</h2>
+      <p class="subtitle">Register to start shopping</p>
+
+      <form id="registerForm">
+        <label>Username
+          <input id="username" required placeholder="Enter your username">
+        </label>
+        <label>Email
+          <input id="email" type="email" required placeholder="Enter your email">
+        </label>
+        <label>Password
+          <div class="password">
+            <input id="regPassword" type="password" required placeholder="Create a password">
+            <button type="button" class="eye" data-target="regPassword">◉</button>
+          </div>
+        </label>
+        <label>Confirm Password
+          <div class="password">
+            <input id="confirmPassword" type="password" required placeholder="Repeat your password">
+            <button type="button" class="eye" data-target="confirmPassword">◉</button>
+          </div>
+        </label>
+        <label>Referral Code <small>(optional)</small>
+          <input id="referral" placeholder="Enter referral code">
+        </label>
+        <label class="terms">
+          <input id="terms" type="checkbox" required>
+          <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+        </label>
+        <div id="registerError" class="message"></div>
+        <div id="success" class="success"></div>
+        <button class="main-btn" type="submit">Create Account</button>
+      </form>
+
+      <p class="bottom">Already have an account?
+        <button class="text-btn switch-login" type="button">Login here</button>
+      </p>
+    </div>
+
+  </section>
+
+  <section class="center-info">
+    <div class="center-title">PREMIUM <span>DIGITAL STORE</span></div>
+    <p>Everything you need, in one place.</p>
+    <div class="feature-list">
+      <div class="feature"><i>✦</i><div><b>Secure & Safe</b><small>Your account and data are protected.</small></div></div>
+      <div class="feature"><i>⚡</i><div><b>Fast & Easy</b><small>Simple login and smooth shopping.</small></div></div>
+      <div class="feature"><i>◈</i><div><b>Premium Products</b><small>Find quality digital products.</small></div></div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
